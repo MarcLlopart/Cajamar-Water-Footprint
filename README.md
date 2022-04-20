@@ -76,4 +76,3 @@ En el directorio *data* encontramos los ficheros divididos en chunks para hacer 
 
 El script de predicción contiene varias celdas correspondientes a la ejecución de cada parte del modelo, se pueden correr por separado, en caso de disponer de *AWS SageMaker Studio Lab* se pueden ejecutar en paralelo. 
 
-
