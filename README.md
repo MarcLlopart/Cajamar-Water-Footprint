@@ -68,6 +68,8 @@ En esta tabla el el modelo 1 hace referencia a un RandomForestRegressor con un f
 
 Decidimos usar esa ventana temporal ya que coincidimos que lo mejor era comparar con el mismo día de las semanas previas ya que el comportamiento entre semanas tenia cierta correlación. No consideramos mirar más allá de los 56 días ya que no vemos relación alguna.
 
+Destacamos que encontramos valores anormales en el modelo 4 y 5. Lo podemos ver en el total y en la partición 4 en ambos modelos, y en la partición 8 en el modelo 4. Estos valores vienen dados debido a que los modelos usados encuentran ciertas tendencias en esas particiones, y las prediccones hechas no se ajustan a los valores que tenemos. Esto ocurre en el modelo 4 ya que usamos un modelo lineal con una penalización Ridge y en el modelo 5 por falta de árboles de decisón, ya que 3 són muy pocos. Pero debido al alto coste computacional no pudimos sacar valores con más árboles.
+
 ## Instrucciones de uso
 
 En el directorio *data* encontramos los ficheros divididos en chunks para hacer las lecturas correspondientes y la limpieza correcta de los datos. El fichero *DF.csv* corresponde al dataset ya limipio y preparado para aplicar diversos modelos. 
